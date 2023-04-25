@@ -3,7 +3,6 @@ use libfuzzer_sys::fuzz_target;
 use lru::LruCache;
 use std::num::NonZeroUsize;
 
-// TODO: add docs about arbitrary
 fuzz_target!(|value: (u8, usize, &[u8])| {
     let (key, size, val) = value;
     if size == 0 || size > 100000 {

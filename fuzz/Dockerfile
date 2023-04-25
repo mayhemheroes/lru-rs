@@ -21,3 +21,5 @@ FROM --platform=linux/amd64 rustlang/rust:nightly
 COPY --from=builder /lru-rs/fuzz/target/x86_64-unknown-linux-gnu/release/lru_put /
 
 COPY --from=builder /lru-rs/fuzz/target/x86_64-unknown-linux-gnu/release/lru_multi_put /
+
+COPY --from=builder /lru-rs/fuzz/target/x86_64-unknown-linux-gnu/release/lru_put_and_replace /
