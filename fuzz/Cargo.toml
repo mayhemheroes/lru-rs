@@ -23,3 +23,9 @@ name = "lru_put"
 path = "fuzz_targets/lru_put.rs"
 test = false
 doc = false
+
+[[bin]]
+name = "lru_multi_put"
+path = "fuzz_targets/lru_multi_put.rs"
+test = false
+doc = false
