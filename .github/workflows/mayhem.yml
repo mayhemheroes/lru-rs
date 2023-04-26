@@ -77,6 +77,15 @@ jobs:
           sarif-output: sarif
 
 
+
+      - name: Start analysis of demote
+        uses: ForAllSecure/mcode-action@v1
+        with:
+          mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
+          args: --file fuzz/mayhemfiles/Mayhemfile_demote --image ${{ steps.meta.outputs.tags }}
+          sarif-output: sarif
+
+
       # ------ end mcode-action steps
 
       - name: Upload SARIF file(s)

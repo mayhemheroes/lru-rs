@@ -35,3 +35,9 @@ name = "lru_put_and_replace"
 path = "fuzz_targets/lru_put_and_replace.rs"
 test = false
 doc = false
+
+[[bin]]
+name = "demote"
+path = "fuzz_targets/demote.rs"
+test = false
+doc = false
