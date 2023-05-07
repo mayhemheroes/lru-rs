@@ -1,0 +1,7 @@
+project: lru-rs
+target: lru_multi_put
+duration: 90
+
+cmds:
+    - cmd: /lru_multi_put
+

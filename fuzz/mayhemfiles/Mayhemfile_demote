@@ -1,0 +1,7 @@
+project: lru-rs
+target: demote
+duration: 90
+
+cmds:
+    - cmd: /demote
+
